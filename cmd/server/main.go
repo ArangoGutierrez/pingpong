@@ -10,14 +10,16 @@ import (
 	pb "github.com/ArangoGutierrez/pingpong/grpc/pong"
 )
 
+// PongServer empty struct for gRPC interfaces
 type PongServer struct {
 }
 
+// PingPongRPC stream gRPC func
 func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error {
 	log.Println("Started stream")
 	for {
 		in, err := stream.Recv()
-		log.Println("Ping ...>  %v", in.Ball)
+		log.Println("Ping ...>  %i", in.Ball)
 		if err == io.EOF {
 			return nil
 		}
