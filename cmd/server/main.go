@@ -7,7 +7,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	pb "github.com/ArangoGutierrez/PingPong/grpc/pong"
+	pb "github.com/ArangoGutierrez/pingpong/grpc/pong"
 )
 
 type PongServer struct {

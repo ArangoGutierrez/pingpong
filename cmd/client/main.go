@@ -7,10 +7,14 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	pb "github.com/ArangoGutierrez/PingPong/grpc/pong"
+	pb "github.com/ArangoGutierrez/pingpong/grpc/pong"
 )
 
 func main() {
+	run()
+}
+
+func run() {
 	conn, err := grpc.Dial("localhost:6000", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("failed to connect: %s", err)
