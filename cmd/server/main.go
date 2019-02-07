@@ -11,7 +11,7 @@ import (
 )
 
 // PongServer empty struct for gRPC interfaces
-type PongServer struct {}
+type PongServer struct { }
 
 // PingPongRPC stream gRPC func
 func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error {
