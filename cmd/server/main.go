@@ -16,8 +16,6 @@ import (
 type PongServer struct {     }
 
 // PingPongRPC stream gRPC func
-
-
 func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error {
 	log.Println("Started stream")
 	
