@@ -39,8 +39,8 @@ func main() {
 	grpcServer := grpc.NewServer()
 	pb.RegisterPongServiceServer(grpcServer, &PongServer{})
 
-	l, err := net.Listen("tcp", ":6000")
-	if err != nil {
+l, err := net.Listen("tcp", ":6000")
+if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
