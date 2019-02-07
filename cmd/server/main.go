@@ -17,6 +17,7 @@ type PongServer struct {
 // PingPongRPC stream gRPC func
 func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error {
 	log.Println("Started stream")
+	
 	for {
 		in, err := stream.Recv()
 		log.Println("Ping ...>  %i", in.Ball)
@@ -39,7 +40,7 @@ func main() {
 	grpcServer := grpc.NewServer()
 	pb.RegisterPongServiceServer(grpcServer, &PongServer{})
 
-	l, err := net.Listen("tcp", ":6000")
+l, err := net.Listen("tcp", ":6000")
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
