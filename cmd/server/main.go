@@ -44,6 +44,7 @@ func main() {
 
 	l, err := net.Listen("tcp", ":6000")
 	if err != nil {
+		
 		log.Fatalf("failed to listen: %v", err)
 	}
 
