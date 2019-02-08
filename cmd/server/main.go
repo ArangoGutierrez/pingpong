@@ -23,6 +23,7 @@ type PongServer struct {
 func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error {
 	log.Println("Started stream")
 	
+	
 	for {
 		in, err := stream.Recv()
 		log.Println("Ping ...>  %i", in.Ball)
