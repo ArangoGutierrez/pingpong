@@ -48,3 +48,8 @@ func run() {
 	<-waitc
 	stream.CloseSend()
 }
+
+fun NewSample(/* input variables */) *int {
+	var i int
+    return i
+}
