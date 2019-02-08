@@ -46,3 +46,9 @@ func run() {
 	<-waitc
 	stream.CloseSend()
 }
+
+var heya string
+
+func SomeExportedFunc() heya{
+	return "hi"
+}
