@@ -25,7 +25,7 @@ func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error
 	
 	
 	for {
-		in, err := stream.Recv()
+	in, err := stream.Recv()
 		log.Println("Ping ...>  %i", in.Ball)
 		if err == io.EOF {
 			return nil
