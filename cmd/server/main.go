@@ -15,10 +15,7 @@ import (
 type PongServer struct {
 	
 	
-	
-	
-	
-	
+		
 }
 
 // PingPongRPC stream gRPC func
