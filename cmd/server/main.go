@@ -12,7 +12,6 @@ import (
 
 // PongServer empty struct for gRPC interfaces
 
-
 type PongServer struct {
 	
 }
