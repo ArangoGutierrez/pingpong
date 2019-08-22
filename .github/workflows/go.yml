@@ -7,6 +7,7 @@ jobs:
 
   linty:
     name: GoLinty
+    runs-on: ubuntu-latest
     steps:
       - name: Go-Linty
         uses: ArangoGutierrez/GoLinty-Action@v1.1.0
