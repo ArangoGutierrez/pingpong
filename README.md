@@ -1,4 +1,4 @@
 # pingpong
 
 
-A GO gRPC server-client stream demo
+A Go gRPC server-client stream demo
