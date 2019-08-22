@@ -38,6 +38,13 @@ func (ps *PongServer) PingPongRPC(stream pb.PongService_PingPongRPCServer) error
 func main() {
 	grpcServer := grpc.NewServer()
 	pb.RegisterPongServiceServer(grpcServer, &PongServer{})
+	
+	var heya string
+
+func SomeExportedFunc() heya{
+	return "hello actions"
+}
+	
 
 	l, err := net.Listen("tcp", ":6000")
 	if err != nil {
