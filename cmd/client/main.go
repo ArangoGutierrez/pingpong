@@ -50,5 +50,5 @@ func run() {
 var heya string
 
 func SomeExportedFunc() heya{
-	return "hello"
+	return "hello actions"
 }
