@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Go-Linty
-        uses: ArangoGutierrez/GoLinty-Action@v1.1.0
+        uses: ArangoGutierrez/GoLinty-Action@v1.0.0-go1.12-alpine
         env:
-          GOLANG_TAG: 1.13rc1-alpine
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build:
     needs: linty
