@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Go-Linty
-        uses: ArangoGutierrez/GoLinty-Action@v1
+        uses: ArangoGutierrez/GoLinty-Action@go-1.12-alpine
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
